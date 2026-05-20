@@ -1,0 +1,52 @@
+{
+  "overall": {
+    "n": 773,
+    "accuracy": 0.7606727037516171
+  },
+  "by_gold_changed_fact": {
+    "dominant_axis+periodicity": {
+      "n": 91,
+      "accuracy": 0.7142857142857143
+    },
+    "intensity+dominant_frequency": {
+      "n": 115,
+      "accuracy": 0.9130434782608695
+    },
+    "out_of_range": {
+      "n": 194,
+      "accuracy": 0.7268041237113402
+    },
+    "periodicity+burstiness": {
+      "n": 104,
+      "accuracy": 0.6826923076923077
+    },
+    "supported": {
+      "n": 269,
+      "accuracy": 0.7657992565055762
+    }
+  },
+  "by_predicted_wrong_fact": {
+    "dominant_axis+periodicity": {
+      "n": 38,
+      "accuracy": 0.0
+    },
+    "intensity+dominant_frequency": {
+      "n": 12,
+      "accuracy": 0.0
+    },
+    "out_of_range": {
+      "n": 40,
+      "accuracy": 0.0
+    },
+    "periodicity+burstiness": {
+      "n": 59,
+      "accuracy": 0.0
+    },
+    "supported": {
+      "n": 36,
+      "accuracy": 0.0
+    }
+  },
+  "rows": "outputs/coder_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_margin2_rows.jsonl",
+  "benchmark": "outputs/constrained_ucihar_hard_v3_subset.jsonl"
+}

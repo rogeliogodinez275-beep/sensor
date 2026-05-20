@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+pyyaml
+tqdm
+pytest
+torch
+transformers
+accelerate

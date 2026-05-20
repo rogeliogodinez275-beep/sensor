@@ -1,0 +1,121 @@
+{
+  "system": "qwen3_dev_calibrated_caption_gate_mhealth",
+  "primary_rows": "outputs/coder_llm_mhealth_hard_v3_constrained_caption_order_vote5_prompt_fewshot_json_caption_only_rows.jsonl",
+  "alternate_rows": "outputs/qwen3_4b_choice_logprob_mhealth_hard_v3_constrained_full_rows.jsonl",
+  "selection_rule": "maximize dev accuracy; break ties by lower alternate coverage, then higher threshold",
+  "best_threshold": 10.0,
+  "best": {
+    "threshold": 10.0,
+    "caption_selection_accuracy": 1.0,
+    "delta_vs_primary": 0.05660377358490565,
+    "alternate_count": 43,
+    "coverage": 0.8113207547169812,
+    "n_eval_records": 53
+  },
+  "sweep": [
+    {
+      "threshold": 0.0,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 53,
+      "coverage": 1.0,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 0.5,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 53,
+      "coverage": 1.0,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 1.0,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 53,
+      "coverage": 1.0,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 1.5,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 52,
+      "coverage": 0.9811320754716981,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 2.0,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 52,
+      "coverage": 0.9811320754716981,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 2.5,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 52,
+      "coverage": 0.9811320754716981,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 3.0,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 52,
+      "coverage": 0.9811320754716981,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 4.0,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 52,
+      "coverage": 0.9811320754716981,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 5.0,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 52,
+      "coverage": 0.9811320754716981,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 7.5,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 49,
+      "coverage": 0.9245283018867925,
+      "n_eval_records": 53
+    },
+    {
+      "threshold": 10.0,
+      "caption_selection_accuracy": 1.0,
+      "delta_vs_primary": 0.05660377358490565,
+      "alternate_count": 43,
+      "coverage": 0.8113207547169812,
+      "n_eval_records": 53
+    }
+  ],
+  "split": {
+    "dev_modulus": 5,
+    "dev_remainders": [
+      0
+    ],
+    "n_dev_records": 53,
+    "n_eval_records": 275
+  },
+  "heldout_eval": {
+    "system": "qwen3_dev_calibrated_caption_gate_mhealth_heldout_eval",
+    "caption_selection_accuracy": 0.9636363636363636,
+    "n_eval_records": 275,
+    "caption_gate_alternate_count": 224,
+    "threshold": 10.0,
+    "coverage": 0.8145454545454546
+  }
+}

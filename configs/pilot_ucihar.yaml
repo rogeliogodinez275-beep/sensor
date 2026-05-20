@@ -1,0 +1,20 @@
+dataset_id: OmniData/HAR
+text_embedding_model: Qwen/Qwen3-Embedding-0.6B
+llm_inference_model: Qwen/Qwen3-4B-Instruct-2507
+sample_rate: 50.0
+seed: 42
+max_train_windows: 2000
+max_test_windows: 1000
+evidence_fields:
+  - intensity
+  - periodicity
+  - dominant_axis
+  - dominant_frequency
+  - burstiness
+  - trend_segments
+systems:
+  - B0
+  - B1
+  - B2
+  - B3
+  - M1

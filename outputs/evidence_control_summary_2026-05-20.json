@@ -1,0 +1,100 @@
+{
+  "rows": [
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "condition": "visible",
+      "choice_acc": 0.7192755498059509,
+      "gated_acc": 0.7606727037516171,
+      "gated_coverage": 0.35316946959896506
+    },
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "condition": "shuffled-evidence",
+      "choice_acc": 0.7309184993531694,
+      "gated_acc": 0.7425614489003881,
+      "gated_coverage": 0.11384217335058215
+    },
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "condition": "numeric-mask",
+      "choice_acc": 0.7063389391979301,
+      "gated_acc": 0.7490297542043984,
+      "gated_coverage": 0.2147477360931436
+    },
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "condition": "hidden-evidence",
+      "choice_acc": 0.851228978007762,
+      "gated_acc": 0.741267787839586,
+      "gated_coverage": 0.028460543337645538
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "condition": "visible",
+      "choice_acc": 0.7683307332293292,
+      "gated_acc": 0.7956318252730109,
+      "gated_coverage": 0.1918876755070203
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "condition": "shuffled-evidence",
+      "choice_acc": 0.765210608424337,
+      "gated_acc": 0.7854914196567863,
+      "gated_coverage": 0.09204368174726989
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "condition": "numeric-mask",
+      "choice_acc": 0.7581903276131046,
+      "gated_acc": 0.7948517940717629,
+      "gated_coverage": 0.18252730109204368
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "condition": "hidden-evidence",
+      "choice_acc": 0.8853354134165367,
+      "gated_acc": 0.8081123244929798,
+      "gated_coverage": 0.11778471138845553
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "condition": "visible",
+      "choice_acc": 0.9939024390243902,
+      "gated_acc": 0.9512195121951219,
+      "gated_coverage": 0.14634146341463414
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "condition": "shuffled-evidence",
+      "choice_acc": 0.9207317073170732,
+      "gated_acc": 0.9298780487804879,
+      "gated_coverage": 0.11585365853658537
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "condition": "numeric-mask",
+      "choice_acc": 0.9939024390243902,
+      "gated_acc": 0.9451219512195121,
+      "gated_coverage": 0.17073170731707318
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "condition": "hidden-evidence",
+      "choice_acc": 0.9817073170731707,
+      "gated_acc": 0.9359756097560976,
+      "gated_coverage": 0.08231707317073171
+    }
+  ]
+}

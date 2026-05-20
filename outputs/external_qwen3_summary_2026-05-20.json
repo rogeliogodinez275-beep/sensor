@@ -1,0 +1,35 @@
+{
+  "model_tag": "qwen3_4b",
+  "rows": [
+    {
+      "dataset": "ucihar",
+      "choice_accuracy": 0.684346701164295,
+      "gated_accuracy": 0.685640362225097,
+      "nogate_accuracy": 0.684346701164295,
+      "delta_vs_vote5": -0.05045278137128073,
+      "mcnemar_midp": 0.001953728034064342,
+      "gate_alternate_count": 770,
+      "n_eval_records": 773
+    },
+    {
+      "dataset": "wisdm",
+      "choice_accuracy": 0.6708268330733229,
+      "gated_accuracy": 0.6840873634945398,
+      "nogate_accuracy": 0.6708268330733229,
+      "delta_vs_vote5": -0.10842433697347897,
+      "mcnemar_midp": 1.3518345613089465e-16,
+      "gate_alternate_count": 1248,
+      "n_eval_records": 1282
+    },
+    {
+      "dataset": "mhealth",
+      "choice_accuracy": 0.9847560975609756,
+      "gated_accuracy": 0.9847560975609756,
+      "nogate_accuracy": 0.9847560975609756,
+      "delta_vs_vote5": 0.05182926829268286,
+      "mcnemar_midp": 0.0002771615982055664,
+      "gate_alternate_count": 327,
+      "n_eval_records": 328
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "position_prior_acc": 0.48382923673997413,
+      "choice_acc": 0.684346701164295,
+      "choice_minus_position": 0.20051746442432083,
+      "n_eval_records": 773.0
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "position_prior_acc": 0.4641185647425897,
+      "choice_acc": 0.6708268330733229,
+      "choice_minus_position": 0.2067082683307332,
+      "n_eval_records": 1282.0
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "position_prior_acc": 0.625,
+      "choice_acc": 0.9847560975609756,
+      "choice_minus_position": 0.3597560975609756,
+      "n_eval_records": 328.0
+    }
+  ]
+}

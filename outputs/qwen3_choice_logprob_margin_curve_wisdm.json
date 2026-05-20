@@ -1,0 +1,152 @@
+{
+  "primary_rows": "outputs/coder_llm_wisdm_hard_v3_constrained_caption_order_vote5_prompt_fewshot_json_caption_only_rows.jsonl",
+  "alternate_rows": "outputs/qwen3_4b_choice_logprob_wisdm_hard_v3_constrained_full_rows.jsonl",
+  "threshold_curve": [
+    {
+      "threshold": 0.0,
+      "caption_selection_accuracy": 0.6708268330733229,
+      "delta_vs_primary": -0.12168486739469586,
+      "alternate_count": 1282,
+      "coverage": 1.0,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 0.5,
+      "caption_selection_accuracy": 0.6747269890795632,
+      "delta_vs_primary": -0.11778471138845559,
+      "alternate_count": 1274,
+      "coverage": 0.9937597503900156,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 1.0,
+      "caption_selection_accuracy": 0.6770670826833073,
+      "delta_vs_primary": -0.11544461778471149,
+      "alternate_count": 1269,
+      "coverage": 0.9898595943837754,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 1.5,
+      "caption_selection_accuracy": 0.6809672386895476,
+      "delta_vs_primary": -0.11154446177847122,
+      "alternate_count": 1257,
+      "coverage": 0.9804992199687987,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 2.0,
+      "caption_selection_accuracy": 0.6840873634945398,
+      "delta_vs_primary": -0.10842433697347897,
+      "alternate_count": 1248,
+      "coverage": 0.9734789391575663,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 2.5,
+      "caption_selection_accuracy": 0.6856474258970359,
+      "delta_vs_primary": -0.10686427457098291,
+      "alternate_count": 1240,
+      "coverage": 0.9672386895475819,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 3.0,
+      "caption_selection_accuracy": 0.6887675507020281,
+      "delta_vs_primary": -0.10374414976599067,
+      "alternate_count": 1234,
+      "coverage": 0.9625585023400937,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 4.0,
+      "caption_selection_accuracy": 0.6957878315132605,
+      "delta_vs_primary": -0.09672386895475826,
+      "alternate_count": 1216,
+      "coverage": 0.9485179407176287,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 5.0,
+      "caption_selection_accuracy": 0.7004680187207488,
+      "delta_vs_primary": -0.09204368174726996,
+      "alternate_count": 1202,
+      "coverage": 0.9375975039001561,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 7.5,
+      "caption_selection_accuracy": 0.7082683307332294,
+      "delta_vs_primary": -0.08424336973478941,
+      "alternate_count": 1173,
+      "coverage": 0.9149765990639626,
+      "n_eval_records": 1282
+    },
+    {
+      "threshold": 10.0,
+      "caption_selection_accuracy": 0.7269890795631825,
+      "delta_vs_primary": -0.06552262090483629,
+      "alternate_count": 1123,
+      "coverage": 0.87597503900156,
+      "n_eval_records": 1282
+    }
+  ],
+  "margin_buckets": [
+    {
+      "bucket": "(-inf, 0]",
+      "lower": null,
+      "upper": 0.0,
+      "count": 0,
+      "valid_count": 0,
+      "alternate_accuracy": 0.0
+    },
+    {
+      "bucket": "(0, 1]",
+      "lower": 0.0,
+      "upper": 1.0,
+      "count": 13,
+      "valid_count": 13,
+      "alternate_accuracy": 0.23076923076923078
+    },
+    {
+      "bucket": "(1, 2]",
+      "lower": 1.0,
+      "upper": 2.0,
+      "count": 21,
+      "valid_count": 21,
+      "alternate_accuracy": 0.14285714285714285
+    },
+    {
+      "bucket": "(2, 3]",
+      "lower": 2.0,
+      "upper": 3.0,
+      "count": 14,
+      "valid_count": 14,
+      "alternate_accuracy": 0.2857142857142857
+    },
+    {
+      "bucket": "(3, 5]",
+      "lower": 3.0,
+      "upper": 5.0,
+      "count": 32,
+      "valid_count": 32,
+      "alternate_accuracy": 0.21875
+    },
+    {
+      "bucket": "(5, 10]",
+      "lower": 5.0,
+      "upper": 10.0,
+      "count": 79,
+      "valid_count": 79,
+      "alternate_accuracy": 0.3037974683544304
+    },
+    {
+      "bucket": "(10, inf)",
+      "lower": 10.0,
+      "upper": null,
+      "count": 1123,
+      "valid_count": 1123,
+      "alternate_accuracy": 0.29385574354407834
+    }
+  ]
+}

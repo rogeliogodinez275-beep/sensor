@@ -1,0 +1,8 @@
+| Benchmark | System | N | Caption Acc | CF Acc | CF F1 | Pairwise CF Acc | Parse Success |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Easy | Qwen Embedding | 2947 | 1.0000 | 0.1667 | 0.2857 | 1.0000 | N/A |
+| Easy | Qwen 4B LLM | 2947 | 1.0000 | 1.0000 | 1.0000 | N/A | 1.0000 |
+| Hard v1 | Qwen Embedding | 2947 | 0.9060 | 0.2814 | 0.3169 | 0.9729 | N/A |
+| Hard v1 | Qwen 4B LLM | 2947 | 1.0000 | 0.8778 | 0.4761 | N/A | 1.0000 |
+| Hard v2 | Qwen Embedding | 2947 | 0.9773 | 0.1667 | 0.2857 | 0.9898 | N/A |
+| Hard v2 | Qwen 4B LLM | 2947 | 1.0000 | 0.9610 | 0.8950 | N/A | 1.0000 |

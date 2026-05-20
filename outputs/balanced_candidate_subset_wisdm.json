@@ -1,0 +1,95 @@
+{
+  "benchmark_path": "outputs/constrained_wisdm_hard_v3_subset.jsonl",
+  "selection": {
+    "total_records": 1282,
+    "selected_records": 641,
+    "target_fraction": 0.5,
+    "max_length_range": null,
+    "max_overlap_range": null,
+    "mean_selected_length_range": 0.8049921996879875,
+    "mean_selected_overlap_range": 0.032090267800435314
+  },
+  "systems": [
+    {
+      "name": "vote5",
+      "path": "outputs/coder_llm_wisdm_hard_v3_constrained_caption_order_vote5_prompt_fewshot_json_caption_only_rows.jsonl",
+      "full_accuracy": 0.7925117004680188,
+      "balanced_accuracy": 0.8829953198127926,
+      "delta_balanced_minus_full": 0.09048361934477378,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "visible_choice",
+      "path": "outputs/coder_choice_logprob_wisdm_hard_v3_constrained_full_rows.jsonl",
+      "full_accuracy": 0.7683307332293292,
+      "balanced_accuracy": 0.8549141965678627,
+      "delta_balanced_minus_full": 0.0865834633385335,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "visible_gated",
+      "path": "outputs/coder_gated_vote5_choice_logprob_wisdm_hard_v3_constrained_margin2_rows.jsonl",
+      "full_accuracy": 0.7956318252730109,
+      "balanced_accuracy": 0.9001560062402496,
+      "delta_balanced_minus_full": 0.1045241809672387,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "hidden_choice",
+      "path": "outputs/coder_choice_logprob_wisdm_hard_v3_constrained_hidden_evidence_rows.jsonl",
+      "full_accuracy": 0.8853354134165367,
+      "balanced_accuracy": 0.9812792511700468,
+      "delta_balanced_minus_full": 0.09594383775351012,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "hidden_gated",
+      "path": "outputs/coder_gated_vote5_choice_logprob_wisdm_hard_v3_constrained_hidden_evidence_margin2p0_rows.jsonl",
+      "full_accuracy": 0.8081123244929798,
+      "balanced_accuracy": 0.9001560062402496,
+      "delta_balanced_minus_full": 0.09204368174726985,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "position_prior",
+      "path": "outputs/coder_position_prior_wisdm_hard_v3_constrained_rows.jsonl",
+      "full_accuracy": 0.4641185647425897,
+      "balanced_accuracy": 0.44305772230889234,
+      "delta_balanced_minus_full": -0.02106084243369738,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "qwen3_choice",
+      "path": "outputs/qwen3_4b_choice_logprob_wisdm_hard_v3_constrained_full_rows.jsonl",
+      "full_accuracy": 0.6708268330733229,
+      "balanced_accuracy": 0.6864274570982839,
+      "delta_balanced_minus_full": 0.015600624024960985,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "qwen3_gated",
+      "path": "outputs/qwen3_4b_gated_vote5_choice_logprob_wisdm_hard_v3_constrained_margin2p0_rows.jsonl",
+      "full_accuracy": 0.6840873634945398,
+      "balanced_accuracy": 0.7113884555382215,
+      "delta_balanced_minus_full": 0.027301092043681696,
+      "balanced_n": 641,
+      "full_n": 1282
+    },
+    {
+      "name": "qwen3_position_prior",
+      "path": "outputs/qwen3_4b_position_prior_wisdm_hard_v3_constrained_rows.jsonl",
+      "full_accuracy": 0.4641185647425897,
+      "balanced_accuracy": 0.44305772230889234,
+      "delta_balanced_minus_full": -0.02106084243369738,
+      "balanced_n": 641,
+      "full_n": 1282
+    }
+  ]
+}

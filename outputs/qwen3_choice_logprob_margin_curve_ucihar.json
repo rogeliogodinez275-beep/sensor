@@ -1,0 +1,152 @@
+{
+  "primary_rows": "outputs/coder_llm_ucihar_hard_v3_constrained_caption_order_vote5_prompt_fewshot_json_caption_only_rows.jsonl",
+  "alternate_rows": "outputs/qwen3_4b_choice_logprob_ucihar_hard_v3_constrained_full_rows.jsonl",
+  "threshold_curve": [
+    {
+      "threshold": 0.0,
+      "caption_selection_accuracy": 0.684346701164295,
+      "delta_vs_primary": -0.05174644243208282,
+      "alternate_count": 773,
+      "coverage": 1.0,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 0.5,
+      "caption_selection_accuracy": 0.684346701164295,
+      "delta_vs_primary": -0.05174644243208282,
+      "alternate_count": 773,
+      "coverage": 1.0,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 1.0,
+      "caption_selection_accuracy": 0.684346701164295,
+      "delta_vs_primary": -0.05174644243208282,
+      "alternate_count": 772,
+      "coverage": 0.9987063389391979,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 1.5,
+      "caption_selection_accuracy": 0.684346701164295,
+      "delta_vs_primary": -0.05174644243208282,
+      "alternate_count": 771,
+      "coverage": 0.9974126778783958,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 2.0,
+      "caption_selection_accuracy": 0.685640362225097,
+      "delta_vs_primary": -0.05045278137128073,
+      "alternate_count": 770,
+      "coverage": 0.9961190168175937,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 2.5,
+      "caption_selection_accuracy": 0.685640362225097,
+      "delta_vs_primary": -0.05045278137128073,
+      "alternate_count": 770,
+      "coverage": 0.9961190168175937,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 3.0,
+      "caption_selection_accuracy": 0.684346701164295,
+      "delta_vs_primary": -0.05174644243208282,
+      "alternate_count": 768,
+      "coverage": 0.9935316946959897,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 4.0,
+      "caption_selection_accuracy": 0.685640362225097,
+      "delta_vs_primary": -0.05045278137128073,
+      "alternate_count": 766,
+      "coverage": 0.9909443725743855,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 5.0,
+      "caption_selection_accuracy": 0.6869340232858991,
+      "delta_vs_primary": -0.04915912031047864,
+      "alternate_count": 760,
+      "coverage": 0.9831824062095731,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 7.5,
+      "caption_selection_accuracy": 0.6869340232858991,
+      "delta_vs_primary": -0.04915912031047864,
+      "alternate_count": 745,
+      "coverage": 0.963777490297542,
+      "n_eval_records": 773
+    },
+    {
+      "threshold": 10.0,
+      "caption_selection_accuracy": 0.7011642949547219,
+      "delta_vs_primary": -0.03492884864165591,
+      "alternate_count": 704,
+      "coverage": 0.9107373868046572,
+      "n_eval_records": 773
+    }
+  ],
+  "margin_buckets": [
+    {
+      "bucket": "(-inf, 0]",
+      "lower": null,
+      "upper": 0.0,
+      "count": 0,
+      "valid_count": 0,
+      "alternate_accuracy": 0.0
+    },
+    {
+      "bucket": "(0, 1]",
+      "lower": 0.0,
+      "upper": 1.0,
+      "count": 1,
+      "valid_count": 1,
+      "alternate_accuracy": 1.0
+    },
+    {
+      "bucket": "(1, 2]",
+      "lower": 1.0,
+      "upper": 2.0,
+      "count": 2,
+      "valid_count": 2,
+      "alternate_accuracy": 1.0
+    },
+    {
+      "bucket": "(2, 3]",
+      "lower": 2.0,
+      "upper": 3.0,
+      "count": 2,
+      "valid_count": 2,
+      "alternate_accuracy": 0.0
+    },
+    {
+      "bucket": "(3, 5]",
+      "lower": 3.0,
+      "upper": 5.0,
+      "count": 8,
+      "valid_count": 8,
+      "alternate_accuracy": 0.25
+    },
+    {
+      "bucket": "(5, 10]",
+      "lower": 5.0,
+      "upper": 10.0,
+      "count": 56,
+      "valid_count": 56,
+      "alternate_accuracy": 0.10714285714285714
+    },
+    {
+      "bucket": "(10, inf)",
+      "lower": 10.0,
+      "upper": null,
+      "count": 704,
+      "valid_count": 704,
+      "alternate_accuracy": 0.29545454545454547
+    }
+  ]
+}

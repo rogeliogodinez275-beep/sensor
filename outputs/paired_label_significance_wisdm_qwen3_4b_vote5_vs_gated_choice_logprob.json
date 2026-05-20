@@ -1,0 +1,21 @@
+{
+  "n_pairs": 1282,
+  "missing_challenger": 0,
+  "primary_accuracy": 0.7925117004680188,
+  "challenger_accuracy": 0.6840873634945398,
+  "delta": -0.10842433697347897,
+  "both_correct": 800,
+  "both_wrong": 189,
+  "primary_only_correct": 216,
+  "challenger_only_correct": 77,
+  "mcnemar": {
+    "primary_only_correct": 216,
+    "challenger_only_correct": 77,
+    "discordant_count": 293,
+    "two_sided_p_value": 2.000447398382545e-16,
+    "midp_value": 1.3518345613089465e-16
+  },
+  "system": "paired_label_significance_wisdm_qwen3_4b_vote5_vs_gated_choice_logprob",
+  "primary_rows": "outputs/coder_llm_wisdm_hard_v3_constrained_caption_order_vote5_prompt_fewshot_json_caption_only_rows.jsonl",
+  "challenger_rows": "outputs/qwen3_4b_gated_vote5_choice_logprob_wisdm_hard_v3_constrained_margin2p0_rows.jsonl"
+}

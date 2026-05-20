@@ -1,0 +1,31 @@
+# Python/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Models and heavyweight artifacts
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+
+# Raw/generated experiment rows and local scratch
+outputs/**/*_rows.jsonl
+outputs/*_rows.jsonl
+data/processed/
+tmp*/
+__incoming*/
+__codex_sync_tmp__/
+
+# Office/editor files
+*.docx
+~$*
+.DS_Store
+Thumbs.db

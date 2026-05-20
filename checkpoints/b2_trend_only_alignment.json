@@ -1,0 +1,12 @@
+{
+  "caption_selection_accuracy": 0.24092297251442144,
+  "cf_reject_accuracy": 0.16666666666666666,
+  "cf_reject_precision": 0.16666666666666666,
+  "cf_reject_recall": 1.0,
+  "cf_reject_f1": 0.2857142857142857,
+  "qa_accuracy": 0.25,
+  "n_eval_records": 2947,
+  "support_score_threshold": 0.5,
+  "system": "trend_only_alignment",
+  "har_accuracy": 0.506956226671191
+}

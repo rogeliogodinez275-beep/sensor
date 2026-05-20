@@ -1,0 +1,21 @@
+{
+  "n_pairs": 773,
+  "missing_challenger": 0,
+  "primary_accuracy": 0.7360931435963778,
+  "challenger_accuracy": 0.7606727037516171,
+  "delta": 0.02457956015523932,
+  "both_correct": 568,
+  "both_wrong": 184,
+  "primary_only_correct": 1,
+  "challenger_only_correct": 20,
+  "mcnemar": {
+    "primary_only_correct": 1,
+    "challenger_only_correct": 20,
+    "discordant_count": 21,
+    "two_sided_p_value": 2.09808349609375e-05,
+    "midp_value": 1.0967254638671875e-05
+  },
+  "system": "paired_label_significance_ucihar_vote5_vs_gated_choice_logprob",
+  "primary_rows": "outputs/coder_llm_ucihar_hard_v3_constrained_caption_order_vote5_prompt_fewshot_json_caption_only_rows.jsonl",
+  "challenger_rows": "outputs/coder_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_margin2_rows.jsonl"
+}

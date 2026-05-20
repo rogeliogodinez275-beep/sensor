@@ -1,0 +1,113 @@
+{
+  "model_tag": "qwen3_4b",
+  "rows": [
+    {
+      "dataset": "ucihar",
+      "condition": "visible",
+      "choice_accuracy": 0.684346701164295,
+      "gated_accuracy": 0.685640362225097,
+      "nogate_accuracy": 0.684346701164295,
+      "choice_delta_vs_visible": 0.0,
+      "n_eval_records": 773
+    },
+    {
+      "dataset": "ucihar",
+      "condition": "shuffled",
+      "choice_accuracy": 0.574385510996119,
+      "gated_accuracy": 0.6403622250970246,
+      "nogate_accuracy": 0.574385510996119,
+      "choice_delta_vs_visible": -0.10996119016817596,
+      "n_eval_records": 773
+    },
+    {
+      "dataset": "ucihar",
+      "condition": "numeric-mask",
+      "choice_accuracy": 0.6649417852522639,
+      "gated_accuracy": 0.6610608020698577,
+      "nogate_accuracy": 0.6649417852522639,
+      "choice_delta_vs_visible": -0.019404915912031084,
+      "n_eval_records": 773
+    },
+    {
+      "dataset": "ucihar",
+      "condition": "hidden",
+      "choice_accuracy": 0.6455368693402329,
+      "gated_accuracy": 0.6597671410090556,
+      "nogate_accuracy": 0.6455368693402329,
+      "choice_delta_vs_visible": -0.03880983182406206,
+      "n_eval_records": 773
+    },
+    {
+      "dataset": "wisdm",
+      "condition": "visible",
+      "choice_accuracy": 0.6708268330733229,
+      "gated_accuracy": 0.6840873634945398,
+      "nogate_accuracy": 0.6708268330733229,
+      "choice_delta_vs_visible": 0.0,
+      "n_eval_records": 1282
+    },
+    {
+      "dataset": "wisdm",
+      "condition": "shuffled",
+      "choice_accuracy": 0.5538221528861155,
+      "gated_accuracy": 0.5904836193447738,
+      "nogate_accuracy": 0.5538221528861155,
+      "choice_delta_vs_visible": -0.11700468018720744,
+      "n_eval_records": 1282
+    },
+    {
+      "dataset": "wisdm",
+      "condition": "numeric-mask",
+      "choice_accuracy": 0.6474258970358814,
+      "gated_accuracy": 0.6497659906396256,
+      "nogate_accuracy": 0.6474258970358814,
+      "choice_delta_vs_visible": -0.023400936037441533,
+      "n_eval_records": 1282
+    },
+    {
+      "dataset": "wisdm",
+      "condition": "hidden",
+      "choice_accuracy": 0.7090483619344774,
+      "gated_accuracy": 0.7402496099843994,
+      "nogate_accuracy": 0.7090483619344774,
+      "choice_delta_vs_visible": 0.038221528861154486,
+      "n_eval_records": 1282
+    },
+    {
+      "dataset": "mhealth",
+      "condition": "visible",
+      "choice_accuracy": 0.9847560975609756,
+      "gated_accuracy": 0.9847560975609756,
+      "nogate_accuracy": 0.9847560975609756,
+      "choice_delta_vs_visible": 0.0,
+      "n_eval_records": 328
+    },
+    {
+      "dataset": "mhealth",
+      "condition": "shuffled",
+      "choice_accuracy": 0.6036585365853658,
+      "gated_accuracy": 0.6951219512195121,
+      "nogate_accuracy": 0.6036585365853658,
+      "choice_delta_vs_visible": -0.38109756097560976,
+      "n_eval_records": 328
+    },
+    {
+      "dataset": "mhealth",
+      "condition": "numeric-mask",
+      "choice_accuracy": 0.9725609756097561,
+      "gated_accuracy": 0.9786585365853658,
+      "nogate_accuracy": 0.9725609756097561,
+      "choice_delta_vs_visible": -0.012195121951219523,
+      "n_eval_records": 328
+    },
+    {
+      "dataset": "mhealth",
+      "condition": "hidden",
+      "choice_accuracy": 0.7347560975609756,
+      "gated_accuracy": 0.7378048780487805,
+      "nogate_accuracy": 0.7347560975609756,
+      "choice_delta_vs_visible": -0.25,
+      "n_eval_records": 328
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "n_eval_records": 773.0,
+      "full_choice_prompts": 773.0,
+      "effective_override_prompts": 273.0,
+      "gate_coverage": 0.35316946959896506
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "n_eval_records": 1282.0,
+      "full_choice_prompts": 1282.0,
+      "effective_override_prompts": 246.0,
+      "gate_coverage": 0.1918876755070203
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "n_eval_records": 328.0,
+      "full_choice_prompts": 328.0,
+      "effective_override_prompts": 48.0,
+      "gate_coverage": 0.14634146341463414
+    }
+  ]
+}

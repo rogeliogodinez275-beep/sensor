@@ -1,0 +1,95 @@
+{
+  "benchmark_path": "outputs/constrained_ucihar_hard_v3_subset.jsonl",
+  "selection": {
+    "total_records": 773,
+    "selected_records": 386,
+    "target_fraction": 0.5,
+    "max_length_range": null,
+    "max_overlap_range": null,
+    "mean_selected_length_range": 0.9430051813471503,
+    "mean_selected_overlap_range": 0.025371478600246317
+  },
+  "systems": [
+    {
+      "name": "vote5",
+      "path": "outputs/coder_llm_ucihar_hard_v3_constrained_caption_order_vote5_prompt_fewshot_json_caption_only_rows.jsonl",
+      "full_accuracy": 0.7360931435963778,
+      "balanced_accuracy": 0.8316062176165803,
+      "delta_balanced_minus_full": 0.09551307402020248,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "visible_choice",
+      "path": "outputs/coder_choice_logprob_ucihar_hard_v3_constrained_full_rows.jsonl",
+      "full_accuracy": 0.7192755498059509,
+      "balanced_accuracy": 0.8367875647668394,
+      "delta_balanced_minus_full": 0.11751201496088848,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "visible_gated",
+      "path": "outputs/coder_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_margin2_rows.jsonl",
+      "full_accuracy": 0.7606727037516171,
+      "balanced_accuracy": 0.8808290155440415,
+      "delta_balanced_minus_full": 0.12015631179242436,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "hidden_choice",
+      "path": "outputs/coder_choice_logprob_ucihar_hard_v3_constrained_hidden_evidence_rows.jsonl",
+      "full_accuracy": 0.851228978007762,
+      "balanced_accuracy": 1.0,
+      "delta_balanced_minus_full": 0.14877102199223802,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "hidden_gated",
+      "path": "outputs/coder_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_hidden_evidence_margin2p0_rows.jsonl",
+      "full_accuracy": 0.741267787839586,
+      "balanced_accuracy": 0.8367875647668394,
+      "delta_balanced_minus_full": 0.09551977692725333,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "position_prior",
+      "path": "outputs/coder_position_prior_ucihar_hard_v3_constrained_rows.jsonl",
+      "full_accuracy": 0.48382923673997413,
+      "balanced_accuracy": 0.47150259067357514,
+      "delta_balanced_minus_full": -0.012326646066398994,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "qwen3_choice",
+      "path": "outputs/qwen3_4b_choice_logprob_ucihar_hard_v3_constrained_full_rows.jsonl",
+      "full_accuracy": 0.684346701164295,
+      "balanced_accuracy": 0.694300518134715,
+      "delta_balanced_minus_full": 0.009953816970420082,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "qwen3_gated",
+      "path": "outputs/qwen3_4b_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_margin2p0_rows.jsonl",
+      "full_accuracy": 0.685640362225097,
+      "balanced_accuracy": 0.6968911917098446,
+      "delta_balanced_minus_full": 0.011250829484747538,
+      "balanced_n": 386,
+      "full_n": 773
+    },
+    {
+      "name": "qwen3_position_prior",
+      "path": "outputs/qwen3_4b_position_prior_ucihar_hard_v3_constrained_rows.jsonl",
+      "full_accuracy": 0.48382923673997413,
+      "balanced_accuracy": 0.47150259067357514,
+      "delta_balanced_minus_full": -0.012326646066398994,
+      "balanced_n": 386,
+      "full_n": 773
+    }
+  ]
+}
