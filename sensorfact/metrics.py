@@ -64,6 +64,55 @@ def macro_f1(y_true: Iterable, y_pred: Iterable) -> float:
     return float(np.mean(scores))
 
 
+def brier_score(y_true: Iterable[int], y_score: Iterable[float]) -> float:
+    truth = np.asarray([int(x) for x in y_true], dtype=np.float32)
+    score = np.asarray([float(x) for x in y_score], dtype=np.float32)
+    if truth.size == 0:
+        return 0.0
+    return float(np.mean(np.square(score - truth)))
+
+
+def expected_calibration_error(
+    y_true: Iterable[int],
+    y_score: Iterable[float],
+    n_bins: int = 10,
+) -> float:
+    truth = np.asarray([int(x) for x in y_true], dtype=np.float32)
+    score = np.asarray([float(x) for x in y_score], dtype=np.float32)
+    if truth.size == 0:
+        return 0.0
+    bins = np.linspace(0.0, 1.0, n_bins + 1)
+    total = truth.size
+    ece = 0.0
+    for idx in range(n_bins):
+        left, right = bins[idx], bins[idx + 1]
+        if idx == n_bins - 1:
+            mask = (score >= left) & (score <= right)
+        else:
+            mask = (score >= left) & (score < right)
+        if not np.any(mask):
+            continue
+        accuracy_value = float(np.mean(truth[mask]))
+        confidence_value = float(np.mean(score[mask]))
+        ece += float(np.sum(mask)) / total * abs(accuracy_value - confidence_value)
+    return float(ece)
+
+
+def risk_coverage_auc(y_true: Iterable[int], y_score: Iterable[float]) -> float:
+    truth = np.asarray([int(x) for x in y_true], dtype=np.int64)
+    score = np.asarray([float(x) for x in y_score], dtype=np.float32)
+    if truth.size == 0:
+        return 0.0
+    pred = (score >= 0.5).astype(np.int64)
+    confidence = np.maximum(score, 1.0 - score)
+    order = np.argsort(-confidence)
+    correct = (pred[order] == truth[order]).astype(np.float32)
+    coverages = np.arange(1, truth.size + 1, dtype=np.float32) / truth.size
+    risks = 1.0 - np.cumsum(correct) / np.arange(1, truth.size + 1, dtype=np.float32)
+    risk_area = float(np.trapezoid(risks, coverages))
+    return float(max(0.0, min(1.0, 1.0 - risk_area)))
+
+
 def majority_baseline(labels: Iterable[str]) -> str | None:
     counts = Counter(labels)
     return counts.most_common(1)[0][0] if counts else None

@@ -2,6 +2,23 @@
 
 生成日期：2026-05-20
 
+## 0. 2026-05-21 最新实验更新
+
+本轮新增 **harder evidence controls** 与 **Qwen3 cross-model confirmation**，用于把论文叙事进一步固定为 risk-bounded / evidence-first grounding，而不是单纯追逐 caption accuracy。
+
+最新结论如下：
+
+1. Qwen2.5-Coder harder-controls 全部完成，队列 `failures=0`。`axis_permutation` 在 UCI HAR、WISDM、MHEALTH 上分别降至 0.4825、0.4836、0.5396，是最强的 evidence-dependence 信号；`numeric_swap` 与 `trend_flip` 影响较弱，说明模型对数值幅度和趋势字段的使用仍有限。
+2. Dev-calibrated gate 已生成逐行 rows 与 paired significance。相对 order-vote5，UCI HAR 从 0.7361 提升到 0.7671，WISDM 从 0.7925 提升到 0.8151，MHEALTH 从 0.9329 提升到 0.9878，三库 McNemar mid-p 均显著。
+3. Failure taxonomy 显示 dev-calibrated gate 具有净收益：UCI HAR 修正 30、回退 6；WISDM 修正 49、回退 20；MHEALTH 修正 18、回退 0。WISDM 仍需在论文中解释回退风险。
+4. Qwen3 harder-controls 复核也完成，9/9 metrics 齐全，队列 `failures=0`。Qwen3 在 `axis_permutation` 下进一步下降到 UCI HAR 0.3842、WISDM 0.3565、MHEALTH 0.3415，说明 axis/channel evidence dependence 跨模型稳定；但 `numeric_swap` 与 `trend_flip` 仍相对不敏感，因此主张必须保持 bounded。
+
+建议专家讨论时使用以下新增文档：
+
+- `docs/risk_bounded_harder_controls_summary_2026-05-20.md`
+- `docs/qwen3_harder_controls_summary_2026-05-21.md`
+- `outputs/risk_bounded_next/qwen3_harder_controls_summary.json`
+
 ## 1. 研究定位
 
 本项目研究 wearable sensor-language understanding 中的可验证 grounding 问题：给定可穿戴传感器窗口及其结构化统计证据，系统不仅需要选择正确的自然语言 activity/caption，还需要对支持证据与反事实拒绝给出可核查判断。当前论文主线建议从“小幅提升 caption accuracy”升级为 **evidence-first / verifiable counterfactual grounding**。

@@ -1,0 +1,140 @@
+{
+  "rows": [
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "control": "numeric_swap",
+      "choice_accuracy": 0.6830530401034929,
+      "gated_accuracy": 0.6830530401034929,
+      "nogate_accuracy": 0.6830530401034929,
+      "gate_overrides": 765,
+      "n_eval_records": 773,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_ucihar_hard_v3_constrained_numeric_swap_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_numeric_swap_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_ucihar_hard_v3_constrained_numeric_swap_metrics.json"
+      }
+    },
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "control": "axis_permutation",
+      "choice_accuracy": 0.38421733505821476,
+      "gated_accuracy": 0.40620957309184996,
+      "nogate_accuracy": 0.38421733505821476,
+      "gate_overrides": 704,
+      "n_eval_records": 773,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_ucihar_hard_v3_constrained_axis_permutation_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_axis_permutation_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_ucihar_hard_v3_constrained_axis_permutation_metrics.json"
+      }
+    },
+    {
+      "dataset": "UCI HAR",
+      "dataset_id": "ucihar",
+      "control": "trend_flip",
+      "choice_accuracy": 0.685640362225097,
+      "gated_accuracy": 0.685640362225097,
+      "nogate_accuracy": 0.685640362225097,
+      "gate_overrides": 769,
+      "n_eval_records": 773,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_ucihar_hard_v3_constrained_trend_flip_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_ucihar_hard_v3_constrained_trend_flip_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_ucihar_hard_v3_constrained_trend_flip_metrics.json"
+      }
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "control": "numeric_swap",
+      "choice_accuracy": 0.6653666146645866,
+      "gated_accuracy": 0.6708268330733229,
+      "nogate_accuracy": 0.6653666146645866,
+      "gate_overrides": 1256,
+      "n_eval_records": 1282,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_wisdm_hard_v3_constrained_numeric_swap_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_wisdm_hard_v3_constrained_numeric_swap_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_wisdm_hard_v3_constrained_numeric_swap_metrics.json"
+      }
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "control": "axis_permutation",
+      "choice_accuracy": 0.35647425897035884,
+      "gated_accuracy": 0.42745709828393136,
+      "nogate_accuracy": 0.35647425897035884,
+      "gate_overrides": 1094,
+      "n_eval_records": 1282,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_wisdm_hard_v3_constrained_axis_permutation_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_wisdm_hard_v3_constrained_axis_permutation_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_wisdm_hard_v3_constrained_axis_permutation_metrics.json"
+      }
+    },
+    {
+      "dataset": "WISDM",
+      "dataset_id": "wisdm",
+      "control": "trend_flip",
+      "choice_accuracy": 0.6684867394695788,
+      "gated_accuracy": 0.6801872074882995,
+      "nogate_accuracy": 0.6684867394695788,
+      "gate_overrides": 1248,
+      "n_eval_records": 1282,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_wisdm_hard_v3_constrained_trend_flip_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_wisdm_hard_v3_constrained_trend_flip_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_wisdm_hard_v3_constrained_trend_flip_metrics.json"
+      }
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "control": "numeric_swap",
+      "choice_accuracy": 0.975609756097561,
+      "gated_accuracy": 0.9847560975609756,
+      "nogate_accuracy": 0.975609756097561,
+      "gate_overrides": 314,
+      "n_eval_records": 328,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_mhealth_hard_v3_constrained_numeric_swap_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_mhealth_hard_v3_constrained_numeric_swap_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_mhealth_hard_v3_constrained_numeric_swap_metrics.json"
+      }
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "control": "axis_permutation",
+      "choice_accuracy": 0.34146341463414637,
+      "gated_accuracy": 0.38109756097560976,
+      "nogate_accuracy": 0.34146341463414637,
+      "gate_overrides": 278,
+      "n_eval_records": 328,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_mhealth_hard_v3_constrained_axis_permutation_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_mhealth_hard_v3_constrained_axis_permutation_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_mhealth_hard_v3_constrained_axis_permutation_metrics.json"
+      }
+    },
+    {
+      "dataset": "MHEALTH",
+      "dataset_id": "mhealth",
+      "control": "trend_flip",
+      "choice_accuracy": 0.9817073170731707,
+      "gated_accuracy": 0.9847560975609756,
+      "nogate_accuracy": 0.9817073170731707,
+      "gate_overrides": 327,
+      "n_eval_records": 328,
+      "paths": {
+        "choice": "outputs/qwen3_4b_harder_choice_logprob_mhealth_hard_v3_constrained_trend_flip_metrics.json",
+        "gated": "outputs/qwen3_4b_harder_gated_vote5_choice_logprob_mhealth_hard_v3_constrained_trend_flip_margin2p0_metrics.json",
+        "nogate": "outputs/qwen3_4b_harder_nogate_vote5_choice_logprob_mhealth_hard_v3_constrained_trend_flip_metrics.json"
+      }
+    }
+  ],
+  "missing": []
+}
