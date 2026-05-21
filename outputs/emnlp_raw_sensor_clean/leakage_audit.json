@@ -1,0 +1,18 @@
+{
+  "oracle_or_upper_bound": [
+    "supervised oracle_fields",
+    "supervised axis_drop",
+    "supervised numeric_drop",
+    "aligner base_full",
+    "aligner distill_full",
+    "aligner riskcal_full",
+    "aligner distill_axis_drop",
+    "aligner distill_numeric_drop"
+  ],
+  "not_clean_enough_for_main_claim": [
+    "supervised numeric_only if numeric features are read from eval evidence cards",
+    "aligner numeric_only if numeric features are read from eval evidence cards"
+  ],
+  "fair_main_candidate": "raw_sensor_field_aligner",
+  "rule": "at test time the model may read raw sensor windows and candidate text only; eval evidence cards are diagnostics only"
+}

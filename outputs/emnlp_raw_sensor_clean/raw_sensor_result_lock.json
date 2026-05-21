@@ -1,0 +1,70 @@
+{
+  "raw_sensor": [
+    {
+      "dataset_id": "ucihar",
+      "dataset": "UCI HAR",
+      "metrics_path": "outputs/emnlp_raw_sensor_clean/raw_sensor_ucihar_metrics.json",
+      "rows_path": "outputs/emnlp_raw_sensor_clean/raw_sensor_ucihar_rows.jsonl",
+      "model_path": "outputs/emnlp_raw_sensor_clean/models/raw_sensor_ucihar.pt",
+      "status": "done",
+      "caption_accuracy": 0.8286392941974889,
+      "caption_macro_f1": 0.8286582684365925,
+      "cf_reject_f1": 0.4341729420929629,
+      "support_ece": 0.37622004870587417,
+      "support_brier": 0.24262762069702148,
+      "evidence_field_accuracy": 0.7740753308449271,
+      "device": "cuda",
+      "n_train_records": 7352,
+      "n_eval_records": 2947,
+      "threshold": 0.7988229036331177
+    },
+    {
+      "dataset_id": "wisdm",
+      "dataset": "WISDM",
+      "metrics_path": "outputs/emnlp_raw_sensor_clean/raw_sensor_wisdm_metrics.json",
+      "rows_path": "outputs/emnlp_raw_sensor_clean/raw_sensor_wisdm_rows.jsonl",
+      "model_path": "outputs/emnlp_raw_sensor_clean/models/raw_sensor_wisdm.pt",
+      "status": "done",
+      "caption_accuracy": 0.909825468648998,
+      "caption_macro_f1": 0.9096497179606904,
+      "cf_reject_f1": 0.6589880707527767,
+      "support_ece": 0.43716852038146947,
+      "support_brier": 0.2774014174938202,
+      "evidence_field_accuracy": 0.8400775694893342,
+      "device": "cuda",
+      "n_train_records": 11067,
+      "n_eval_records": 3094,
+      "threshold": 0.8044159144163132
+    },
+    {
+      "dataset_id": "mhealth",
+      "dataset": "MHEALTH",
+      "metrics_path": "outputs/emnlp_raw_sensor_clean/raw_sensor_mhealth_metrics.json",
+      "rows_path": "outputs/emnlp_raw_sensor_clean/raw_sensor_mhealth_rows.jsonl",
+      "model_path": "outputs/emnlp_raw_sensor_clean/models/raw_sensor_mhealth.pt",
+      "status": "done",
+      "caption_accuracy": 0.944603629417383,
+      "caption_macro_f1": 0.9445244524403751,
+      "cf_reject_f1": 0.6878109452736318,
+      "support_ece": 0.40708448109895246,
+      "support_brier": 0.2446778416633606,
+      "evidence_field_accuracy": 0.8424068767908309,
+      "device": "cuda",
+      "n_train_records": 4182,
+      "n_eval_records": 1047,
+      "threshold": 0.8027637302875519
+    }
+  ],
+  "claim_boundary": {
+    "fair_main_candidate": "raw_sensor_field_aligner",
+    "oracle_upper_bound": [
+      "supervised oracle_fields",
+      "supervised axis_drop",
+      "supervised numeric_drop",
+      "aligner base_full/distill_full/riskcal_full and drop ablations"
+    ],
+    "not_clean_enough": [
+      "numeric_only modes that read numeric summaries from eval evidence cards"
+    ]
+  }
+}
